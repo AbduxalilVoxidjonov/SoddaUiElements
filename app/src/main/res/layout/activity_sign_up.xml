@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignUp">
+    <View
+        android:id="@+id/back"
+        android:background="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginEnd="150dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="#14304A"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Fill your information below or register with your social account"
+        android:textColor="#C4C4C4"
+        android:textSize="16sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textName"
+            android:imeOptions="actionDone"
+            android:hint="Your name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/data"
+        app:counterMaxLength="10"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textBirthday"
+            android:imeOptions="actionDone"
+            android:hint="MM/DD/YYYY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textAdress"
+            android:imeOptions="actionDone"
+            android:hint="Enter Your Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:counterEnabled="true"
+        app:prefixText="+1"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        app:startIconDrawable="@drawable/call"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountEt"
+            android:inputType="number"
+            android:hint="Phone numebr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#41C485"
+        android:text="Next"
+        app:cornerRadius="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Or sign in with "
+            android:textColor="#C4C4C4"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/facebook" />
+    </LinearLayout>
+</LinearLayout>
